@@ -115,6 +115,8 @@ class TestChangesetFlow(ChangesetTestCommon, TransactionCase):
         self.assertEqual(self.partner.count_pending_changesets, 0)
         self.assertEqual(self.partner.name, "Y")
         self.assertEqual(changeset.change_ids.state, "done")
+        # All computed fields are assigned
+        changeset.change_ids.read()
 
     def test_apply_change_with_prevent_self_validation(self):
         """Don't apply a changeset change and prevent self validation"""
@@ -358,3 +360,18 @@ class TestChangesetFlow(ChangesetTestCommon, TransactionCase):
         self.partner._compute_changeset_ids()
         changeset = self.partner.changeset_ids
         self.assertEqual(changeset.source, company)
+
+    def test_name_get(self):
+        """Test the name_get of a changeset for a model without name field"""
+        self.env["changeset.field.rule"].create(
+            {
+                "field_id": self.env.ref("base.field_res_partner_bank__active").id,
+                "action": "validate",
+            }
+        )
+        bank = self.env.ref("base.bank_partner_demo").with_context(
+            test_record_changeset=True
+        )
+        bank.active = False
+        self.assertTrue(bank.changeset_ids)
+        self.assertIn(bank.acc_number, bank.changeset_ids.name_get()[0][1])

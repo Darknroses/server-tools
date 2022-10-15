@@ -8,6 +8,7 @@ setuptools.setup(
     description="Meta package for oca-server-tools Odoo addons",
     version=version,
     install_requires=[
+        'odoo14-addon-attachment_delete_restrict',
         'odoo14-addon-attachment_queue',
         'odoo14-addon-attachment_synchronize',
         'odoo14-addon-attachment_unindex_content',
@@ -18,6 +19,7 @@ setuptools.setup(
         'odoo14-addon-base_conditional_image',
         'odoo14-addon-base_cron_exclusion',
         'odoo14-addon-base_custom_info',
+        'odoo14-addon-base_deterministic_session_gc',
         'odoo14-addon-base_exception',
         'odoo14-addon-base_fontawesome',
         'odoo14-addon-base_generate_code',
