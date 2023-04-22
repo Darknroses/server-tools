@@ -21,9 +21,9 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[attachment_delete_restrict](attachment_delete_restrict/) | 14.0.1.0.0 | [![yostashiro](https://github.com/yostashiro.png?size=30px)](https://github.com/yostashiro) [![Kev-Roche](https://github.com/Kev-Roche.png?size=30px)](https://github.com/Kev-Roche) | Restrict Deletion of Attachments
+[attachment_delete_restrict](attachment_delete_restrict/) | 14.0.1.0.1 | [![yostashiro](https://github.com/yostashiro.png?size=30px)](https://github.com/yostashiro) [![Kev-Roche](https://github.com/Kev-Roche.png?size=30px)](https://github.com/Kev-Roche) | Restrict Deletion of Attachments
 [attachment_queue](attachment_queue/) | 14.0.1.0.1 | [![florian-dacosta](https://github.com/florian-dacosta.png?size=30px)](https://github.com/florian-dacosta) [![sebastienbeau](https://github.com/sebastienbeau.png?size=30px)](https://github.com/sebastienbeau) | Base module adding the concept of queue for processing files
-[attachment_synchronize](attachment_synchronize/) | 14.0.1.0.1 | [![florian-dacosta](https://github.com/florian-dacosta.png?size=30px)](https://github.com/florian-dacosta) [![sebastienbeau](https://github.com/sebastienbeau.png?size=30px)](https://github.com/sebastienbeau) [![GSLabIt](https://github.com/GSLabIt.png?size=30px)](https://github.com/GSLabIt) [![bealdav](https://github.com/bealdav.png?size=30px)](https://github.com/bealdav) | Attachment Synchronize
+[attachment_synchronize](attachment_synchronize/) | 14.0.1.0.2 | [![florian-dacosta](https://github.com/florian-dacosta.png?size=30px)](https://github.com/florian-dacosta) [![sebastienbeau](https://github.com/sebastienbeau.png?size=30px)](https://github.com/sebastienbeau) [![GSLabIt](https://github.com/GSLabIt.png?size=30px)](https://github.com/GSLabIt) [![bealdav](https://github.com/bealdav.png?size=30px)](https://github.com/bealdav) | Attachment Synchronize
 [attachment_unindex_content](attachment_unindex_content/) | 14.0.1.0.1 | [![moylop260](https://github.com/moylop260.png?size=30px)](https://github.com/moylop260) [![ebirbe](https://github.com/ebirbe.png?size=30px)](https://github.com/ebirbe) [![luisg123v](https://github.com/luisg123v.png?size=30px)](https://github.com/luisg123v) | Disable indexing of attachments
 [auditlog](auditlog/) | 14.0.2.0.1 |  | Audit Log
 [auto_backup](auto_backup/) | 14.0.1.0.0 |  | Backups database
@@ -47,6 +47,7 @@ addon | version | maintainers | summary
 [base_remote](base_remote/) | 14.0.1.0.0 |  | Remote Base
 [base_report_auto_create_qweb](base_report_auto_create_qweb/) | 14.0.1.0.1 |  | Report qweb auto generation
 [base_search_fuzzy](base_search_fuzzy/) | 14.0.1.0.2 |  | Fuzzy search with the PostgreSQL trigram extension
+[base_sequence_default](base_sequence_default/) | 14.0.1.0.0 | [![Shide](https://github.com/Shide.png?size=30px)](https://github.com/Shide) [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) | Use sequences for default values of fields when creating a new record
 [base_sequence_option](base_sequence_option/) | 14.0.1.0.0 | [![kittiu](https://github.com/kittiu.png?size=30px)](https://github.com/kittiu) | Alternative sequence options for specific models
 [base_sparse_field_list_support](base_sparse_field_list_support/) | 14.0.1.0.1 |  | add list support to convert_to_cache()
 [base_technical_user](base_technical_user/) | 14.0.1.0.0 |  | Add a technical user parameter on the company
@@ -73,19 +74,22 @@ addon | version | maintainers | summary
 [module_auto_update](module_auto_update/) | 14.0.1.0.2 |  | Automatically update Odoo modules
 [module_change_auto_install](module_change_auto_install/) | 14.0.1.0.3 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Customize auto installables modules by configuration
 [module_prototyper](module_prototyper/) | 14.0.1.0.0 |  | Prototype your module.
-[nsca_client](nsca_client/) | 14.0.1.0.0 |  | Send passive alerts to monitor your Odoo application.
+[nsca_client](nsca_client/) | 14.0.1.0.1 |  | Send passive alerts to monitor your Odoo application.
 [onchange_helper](onchange_helper/) | 14.0.1.0.2 |  | Technical module that ease execution of onchange in Python code
-[rpc_helper](rpc_helper/) | 14.0.1.1.0 | [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) | Helpers for disabling RPC calls
+[rpc_helper](rpc_helper/) | 14.0.1.1.1 | [![simahawk](https://github.com/simahawk.png?size=30px)](https://github.com/simahawk) | Helpers for disabling RPC calls
 [scheduler_error_mailer](scheduler_error_mailer/) | 14.0.1.2.0 |  | Scheduler Error Mailer
-[sentry](sentry/) | 14.0.1.1.1 | [![barsi](https://github.com/barsi.png?size=30px)](https://github.com/barsi) [![naglis](https://github.com/naglis.png?size=30px)](https://github.com/naglis) [![versada](https://github.com/versada.png?size=30px)](https://github.com/versada) [![moylop260](https://github.com/moylop260.png?size=30px)](https://github.com/moylop260) [![fernandahf](https://github.com/fernandahf.png?size=30px)](https://github.com/fernandahf) | Report Odoo errors to Sentry
+[sentry](sentry/) | 14.0.2.0.0 | [![barsi](https://github.com/barsi.png?size=30px)](https://github.com/barsi) [![naglis](https://github.com/naglis.png?size=30px)](https://github.com/naglis) [![versada](https://github.com/versada.png?size=30px)](https://github.com/versada) [![moylop260](https://github.com/moylop260.png?size=30px)](https://github.com/moylop260) [![fernandahf](https://github.com/fernandahf.png?size=30px)](https://github.com/fernandahf) | Report Odoo errors to Sentry
 [sequence_python](sequence_python/) | 14.0.1.0.0 |  | Calculate a sequence number from a Python expression
+[session_db](session_db/) | 14.0.1.0.1 | [![sbidoul](https://github.com/sbidoul.png?size=30px)](https://github.com/sbidoul) | Store sessions in DB
 [slow_statement_logger](slow_statement_logger/) | 14.0.1.0.1 |  | Log slow SQL statements
 [sql_export](sql_export/) | 14.0.1.2.1 |  | Export data in csv file with SQL requests
 [sql_export_excel](sql_export_excel/) | 14.0.1.1.0 |  | Allow to export a sql query to an excel file.
 [sql_export_mail](sql_export_mail/) | 14.0.1.0.0 |  | Send csv file generated by sql query by mail.
 [sql_request_abstract](sql_request_abstract/) | 14.0.1.3.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Abstract Model to manage SQL Requests
 [test_base_time_window](test_base_time_window/) | 14.0.1.0.1 |  | Test Base model to handle time windows
+[tracking_manager](tracking_manager/) | 14.0.1.0.1 | [![Kev-Roche](https://github.com/Kev-Roche.png?size=30px)](https://github.com/Kev-Roche) [![sebastienbeau](https://github.com/sebastienbeau.png?size=30px)](https://github.com/sebastienbeau) | This module tracks all fields of a model, including one2many and many2many ones.
 [upgrade_analysis](upgrade_analysis/) | 14.0.3.0.0 |  | Performs a difference analysis between modules installed on two different Odoo instances
+[url_attachment_search_fuzzy](url_attachment_search_fuzzy/) | 14.0.1.0.0 | [![mariadforgelow](https://github.com/mariadforgelow.png?size=30px)](https://github.com/mariadforgelow) | Fuzzy Search of URL in Attachments
 
 [//]: # (end addons)
 
